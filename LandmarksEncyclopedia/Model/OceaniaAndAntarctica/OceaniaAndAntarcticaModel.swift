@@ -36,3 +36,5 @@ class OceaniaAndAntarcticaModel: ModelInfoStorable {
     let inputWidth: Int = 321
     let inputHeight: Int = 321
 }
+
+// https://tfhub.dev/google/lite-model/on_device_vision/classifier/landmarks_classifier_oceania_antarctica_V1/1
