@@ -13,9 +13,11 @@
 		14CCE3FC26D3EFA800DCECA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14CCE3FA26D3EFA800DCECA2 /* Main.storyboard */; };
 		14CCE3FE26D3EFAA00DCECA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14CCE3FD26D3EFAA00DCECA2 /* Assets.xcassets */; };
 		14CCE40126D3EFAA00DCECA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14CCE3FF26D3EFAA00DCECA2 /* LaunchScreen.storyboard */; };
+		3796F33F50C312360E2CB59C /* Pods_LandmarksEncyclopedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1E3B7A22AB3672D7B91C3EC /* Pods_LandmarksEncyclopedia.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1215E123125189AE51D16AEC /* Pods-LandmarksEncyclopedia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LandmarksEncyclopedia.debug.xcconfig"; path = "Target Support Files/Pods-LandmarksEncyclopedia/Pods-LandmarksEncyclopedia.debug.xcconfig"; sourceTree = "<group>"; };
 		14CCE3F126D3EFA800DCECA2 /* LandmarksEncyclopedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LandmarksEncyclopedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14CCE3F426D3EFA800DCECA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14CCE3F626D3EFA800DCECA2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		14CCE3FD26D3EFAA00DCECA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14CCE40026D3EFAA00DCECA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		14CCE40226D3EFAA00DCECA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B07BEA13991F6C23164345F0 /* Pods-LandmarksEncyclopedia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LandmarksEncyclopedia.release.xcconfig"; path = "Target Support Files/Pods-LandmarksEncyclopedia/Pods-LandmarksEncyclopedia.release.xcconfig"; sourceTree = "<group>"; };
+		B1E3B7A22AB3672D7B91C3EC /* Pods_LandmarksEncyclopedia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LandmarksEncyclopedia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3796F33F50C312360E2CB59C /* Pods_LandmarksEncyclopedia.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01DDABEE1556ACB2C843BEA7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1215E123125189AE51D16AEC /* Pods-LandmarksEncyclopedia.debug.xcconfig */,
+				B07BEA13991F6C23164345F0 /* Pods-LandmarksEncyclopedia.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		14CCE3E826D3EFA800DCECA2 = {
 			isa = PBXGroup;
 			children = (
 				14CCE3F326D3EFA800DCECA2 /* LandmarksEncyclopedia */,
 				14CCE3F226D3EFA800DCECA2 /* Products */,
+				01DDABEE1556ACB2C843BEA7 /* Pods */,
+				69E1AEC4F3FC4371B1F2095C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +84,14 @@
 			path = LandmarksEncyclopedia;
 			sourceTree = "<group>";
 		};
+		69E1AEC4F3FC4371B1F2095C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B1E3B7A22AB3672D7B91C3EC /* Pods_LandmarksEncyclopedia.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +99,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 14CCE40526D3EFAA00DCECA2 /* Build configuration list for PBXNativeTarget "LandmarksEncyclopedia" */;
 			buildPhases = (
+				4131673325E288906BD2A3FF /* [CP] Check Pods Manifest.lock */,
 				14CCE3ED26D3EFA800DCECA2 /* Sources */,
 				14CCE3EE26D3EFA800DCECA2 /* Frameworks */,
 				14CCE3EF26D3EFA800DCECA2 /* Resources */,
@@ -131,6 +157,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4131673325E288906BD2A3FF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LandmarksEncyclopedia-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		14CCE3ED26D3EFA800DCECA2 /* Sources */ = {
@@ -283,6 +334,7 @@
 		};
 		14CCE40626D3EFAA00DCECA2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1215E123125189AE51D16AEC /* Pods-LandmarksEncyclopedia.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +354,7 @@
 		};
 		14CCE40726D3EFAA00DCECA2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B07BEA13991F6C23164345F0 /* Pods-LandmarksEncyclopedia.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
