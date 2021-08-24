@@ -48,8 +48,23 @@
 				1215E123125189AE51D16AEC /* Pods-LandmarksEncyclopedia.debug.xcconfig */,
 				B07BEA13991F6C23164345F0 /* Pods-LandmarksEncyclopedia.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		147F23BC26D5359C0070BBD3 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				14CCE3F826D3EFA800DCECA2 /* ViewController.swift */,
+				14CCE3FA26D3EFA800DCECA2 /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		147F23BD26D535F10070BBD3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		14CCE3E826D3EFA800DCECA2 = {
@@ -75,8 +90,8 @@
 			children = (
 				14CCE3F426D3EFA800DCECA2 /* AppDelegate.swift */,
 				14CCE3F626D3EFA800DCECA2 /* SceneDelegate.swift */,
-				14CCE3F826D3EFA800DCECA2 /* ViewController.swift */,
-				14CCE3FA26D3EFA800DCECA2 /* Main.storyboard */,
+				147F23BD26D535F10070BBD3 /* Model */,
+				147F23BC26D5359C0070BBD3 /* Main */,
 				14CCE3FD26D3EFAA00DCECA2 /* Assets.xcassets */,
 				14CCE3FF26D3EFAA00DCECA2 /* LaunchScreen.storyboard */,
 				14CCE40226D3EFAA00DCECA2 /* Info.plist */,
