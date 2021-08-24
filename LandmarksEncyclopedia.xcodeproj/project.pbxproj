@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		147F23C426D53D400070BBD3 /* lite-model_on_device_vision_classifier_landmarks_classifier_europe_V1_1.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 147F23BE26D53D390070BBD3 /* lite-model_on_device_vision_classifier_landmarks_classifier_europe_V1_1.tflite */; };
+		147F23C526D53D400070BBD3 /* lite-model_on_device_vision_classifier_landmarks_classifier_south_america_V1_1.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 147F23BF26D53D3A0070BBD3 /* lite-model_on_device_vision_classifier_landmarks_classifier_south_america_V1_1.tflite */; };
+		147F23C626D53D400070BBD3 /* lite-model_on_device_vision_classifier_landmarks_classifier_asia_V1_1.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 147F23C026D53D3C0070BBD3 /* lite-model_on_device_vision_classifier_landmarks_classifier_asia_V1_1.tflite */; };
+		147F23C726D53D400070BBD3 /* lite-model_on_device_vision_classifier_landmarks_classifier_africa_V1_1.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 147F23C126D53D3D0070BBD3 /* lite-model_on_device_vision_classifier_landmarks_classifier_africa_V1_1.tflite */; };
+		147F23C826D53D400070BBD3 /* lite-model_on_device_vision_classifier_landmarks_classifier_north_america_V1_1.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 147F23C226D53D3F0070BBD3 /* lite-model_on_device_vision_classifier_landmarks_classifier_north_america_V1_1.tflite */; };
+		147F23C926D53D400070BBD3 /* lite-model_on_device_vision_classifier_landmarks_classifier_oceania_antarctica_V1_1.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 147F23C326D53D400070BBD3 /* lite-model_on_device_vision_classifier_landmarks_classifier_oceania_antarctica_V1_1.tflite */; };
 		14CCE3F526D3EFA800DCECA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CCE3F426D3EFA800DCECA2 /* AppDelegate.swift */; };
 		14CCE3F726D3EFA800DCECA2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CCE3F626D3EFA800DCECA2 /* SceneDelegate.swift */; };
 		14CCE3F926D3EFA800DCECA2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CCE3F826D3EFA800DCECA2 /* ViewController.swift */; };
@@ -18,6 +24,12 @@
 
 /* Begin PBXFileReference section */
 		1215E123125189AE51D16AEC /* Pods-LandmarksEncyclopedia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LandmarksEncyclopedia.debug.xcconfig"; path = "Target Support Files/Pods-LandmarksEncyclopedia/Pods-LandmarksEncyclopedia.debug.xcconfig"; sourceTree = "<group>"; };
+		147F23BE26D53D390070BBD3 /* lite-model_on_device_vision_classifier_landmarks_classifier_europe_V1_1.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = "lite-model_on_device_vision_classifier_landmarks_classifier_europe_V1_1.tflite"; sourceTree = "<group>"; };
+		147F23BF26D53D3A0070BBD3 /* lite-model_on_device_vision_classifier_landmarks_classifier_south_america_V1_1.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = "lite-model_on_device_vision_classifier_landmarks_classifier_south_america_V1_1.tflite"; sourceTree = "<group>"; };
+		147F23C026D53D3C0070BBD3 /* lite-model_on_device_vision_classifier_landmarks_classifier_asia_V1_1.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = "lite-model_on_device_vision_classifier_landmarks_classifier_asia_V1_1.tflite"; sourceTree = "<group>"; };
+		147F23C126D53D3D0070BBD3 /* lite-model_on_device_vision_classifier_landmarks_classifier_africa_V1_1.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = "lite-model_on_device_vision_classifier_landmarks_classifier_africa_V1_1.tflite"; sourceTree = "<group>"; };
+		147F23C226D53D3F0070BBD3 /* lite-model_on_device_vision_classifier_landmarks_classifier_north_america_V1_1.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = "lite-model_on_device_vision_classifier_landmarks_classifier_north_america_V1_1.tflite"; sourceTree = "<group>"; };
+		147F23C326D53D400070BBD3 /* lite-model_on_device_vision_classifier_landmarks_classifier_oceania_antarctica_V1_1.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = "lite-model_on_device_vision_classifier_landmarks_classifier_oceania_antarctica_V1_1.tflite"; sourceTree = "<group>"; };
 		14CCE3F126D3EFA800DCECA2 /* LandmarksEncyclopedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LandmarksEncyclopedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14CCE3F426D3EFA800DCECA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14CCE3F626D3EFA800DCECA2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +75,12 @@
 		147F23BD26D535F10070BBD3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				147F23C126D53D3D0070BBD3 /* lite-model_on_device_vision_classifier_landmarks_classifier_africa_V1_1.tflite */,
+				147F23C026D53D3C0070BBD3 /* lite-model_on_device_vision_classifier_landmarks_classifier_asia_V1_1.tflite */,
+				147F23BE26D53D390070BBD3 /* lite-model_on_device_vision_classifier_landmarks_classifier_europe_V1_1.tflite */,
+				147F23C226D53D3F0070BBD3 /* lite-model_on_device_vision_classifier_landmarks_classifier_north_america_V1_1.tflite */,
+				147F23C326D53D400070BBD3 /* lite-model_on_device_vision_classifier_landmarks_classifier_oceania_antarctica_V1_1.tflite */,
+				147F23BF26D53D3A0070BBD3 /* lite-model_on_device_vision_classifier_landmarks_classifier_south_america_V1_1.tflite */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -165,9 +183,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				147F23C526D53D400070BBD3 /* lite-model_on_device_vision_classifier_landmarks_classifier_south_america_V1_1.tflite in Resources */,
 				14CCE40126D3EFAA00DCECA2 /* LaunchScreen.storyboard in Resources */,
+				147F23C926D53D400070BBD3 /* lite-model_on_device_vision_classifier_landmarks_classifier_oceania_antarctica_V1_1.tflite in Resources */,
 				14CCE3FE26D3EFAA00DCECA2 /* Assets.xcassets in Resources */,
 				14CCE3FC26D3EFA800DCECA2 /* Main.storyboard in Resources */,
+				147F23C426D53D400070BBD3 /* lite-model_on_device_vision_classifier_landmarks_classifier_europe_V1_1.tflite in Resources */,
+				147F23C626D53D400070BBD3 /* lite-model_on_device_vision_classifier_landmarks_classifier_asia_V1_1.tflite in Resources */,
+				147F23C826D53D400070BBD3 /* lite-model_on_device_vision_classifier_landmarks_classifier_north_america_V1_1.tflite in Resources */,
+				147F23C726D53D400070BBD3 /* lite-model_on_device_vision_classifier_landmarks_classifier_africa_V1_1.tflite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
