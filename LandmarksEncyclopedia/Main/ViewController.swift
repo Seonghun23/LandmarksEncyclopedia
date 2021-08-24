@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIImagePickerControllerDelegate {
     
     private let imageView: UIImageView = {
        let imageView = UIImageView()
@@ -36,6 +36,8 @@ class ViewController: UIViewController {
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
+    
+    private let inferenceQueue: DispatchQueue = DispatchQueue(label: "inferenceQueue", qos: .userInteractive)
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,7 +48,9 @@ class ViewController: UIViewController {
     }
     
     private func presentImagePicker() {
-        
+        let pickerController = UIImagePickerController()
+        pickerController.delegate = self
+        present(pickerController, animated: true)
     }
     
     private func setImportButton() {
@@ -108,3 +112,17 @@ class ViewController: UIViewController {
     }
 }
 
+extension ViewController: UINavigationControllerDelegate {
+    func imagePickerController(
+        _ picker: UIImagePickerController,
+        didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]
+    ) {
+        if let image = info[.originalImage] as? UIImage {
+            inferenceQueue.async { [weak self] in
+                guard let self = self else { return }
+            }
+        }
+        
+        picker.dismiss(animated: true)
+    }
+}
