@@ -6,10 +6,8 @@
 //
 
 import Foundation
+import TFLiteSwift_Vision
 
 protocol ModelInfoStorable {
-    var name: String { get }
-    var labels: [String] { get }
-    var inputWidth: Int { get }
-    var inputHeight: Int { get }
+    func process(input: TFLiteVisionInput) -> String
 }

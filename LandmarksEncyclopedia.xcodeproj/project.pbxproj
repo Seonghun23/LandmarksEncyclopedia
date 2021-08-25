@@ -18,8 +18,9 @@
 		142BDBB026D5579700245088 /* AsiaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BDBAF26D5579700245088 /* AsiaModel.swift */; };
 		142BDBB226D557A400245088 /* EuropeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BDBB126D557A400245088 /* EuropeModel.swift */; };
 		142BDBB426D557AF00245088 /* NorthAmerica.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BDBB326D557AF00245088 /* NorthAmerica.swift */; };
-		142BDBB626D557BD00245088 /* SouthAmerica.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BDBB526D557BD00245088 /* SouthAmerica.swift */; };
+		142BDBB626D557BD00245088 /* SouthAmericaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BDBB526D557BD00245088 /* SouthAmericaModel.swift */; };
 		142BDBB826D557D700245088 /* OceaniaAndAntarcticaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BDBB726D557D700245088 /* OceaniaAndAntarcticaModel.swift */; };
+		142BDBBB26D666F000245088 /* TFLiteFlatArray+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BDBBA26D666F000245088 /* TFLiteFlatArray+Extension.swift */; };
 		147F23C426D53D400070BBD3 /* lite-model_on_device_vision_classifier_landmarks_classifier_europe_V1_1.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 147F23BE26D53D390070BBD3 /* lite-model_on_device_vision_classifier_landmarks_classifier_europe_V1_1.tflite */; };
 		147F23C526D53D400070BBD3 /* lite-model_on_device_vision_classifier_landmarks_classifier_south_america_V1_1.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 147F23BF26D53D3A0070BBD3 /* lite-model_on_device_vision_classifier_landmarks_classifier_south_america_V1_1.tflite */; };
 		147F23C626D53D400070BBD3 /* lite-model_on_device_vision_classifier_landmarks_classifier_asia_V1_1.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 147F23C026D53D3C0070BBD3 /* lite-model_on_device_vision_classifier_landmarks_classifier_asia_V1_1.tflite */; };
@@ -48,8 +49,9 @@
 		142BDBAF26D5579700245088 /* AsiaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsiaModel.swift; sourceTree = "<group>"; };
 		142BDBB126D557A400245088 /* EuropeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EuropeModel.swift; sourceTree = "<group>"; };
 		142BDBB326D557AF00245088 /* NorthAmerica.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorthAmerica.swift; sourceTree = "<group>"; };
-		142BDBB526D557BD00245088 /* SouthAmerica.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SouthAmerica.swift; sourceTree = "<group>"; };
+		142BDBB526D557BD00245088 /* SouthAmericaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SouthAmericaModel.swift; sourceTree = "<group>"; };
 		142BDBB726D557D700245088 /* OceaniaAndAntarcticaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OceaniaAndAntarcticaModel.swift; sourceTree = "<group>"; };
+		142BDBBA26D666F000245088 /* TFLiteFlatArray+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TFLiteFlatArray+Extension.swift"; sourceTree = "<group>"; };
 		147F23BE26D53D390070BBD3 /* lite-model_on_device_vision_classifier_landmarks_classifier_europe_V1_1.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = "lite-model_on_device_vision_classifier_landmarks_classifier_europe_V1_1.tflite"; sourceTree = "<group>"; };
 		147F23BF26D53D3A0070BBD3 /* lite-model_on_device_vision_classifier_landmarks_classifier_south_america_V1_1.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = "lite-model_on_device_vision_classifier_landmarks_classifier_south_america_V1_1.tflite"; sourceTree = "<group>"; };
 		147F23C026D53D3C0070BBD3 /* lite-model_on_device_vision_classifier_landmarks_classifier_asia_V1_1.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = "lite-model_on_device_vision_classifier_landmarks_classifier_asia_V1_1.tflite"; sourceTree = "<group>"; };
@@ -134,7 +136,7 @@
 			children = (
 				142BDBAB26D5578000245088 /* landmarks_classifier_south_america_V1_label_map.csv */,
 				147F23BF26D53D3A0070BBD3 /* lite-model_on_device_vision_classifier_landmarks_classifier_south_america_V1_1.tflite */,
-				142BDBB526D557BD00245088 /* SouthAmerica.swift */,
+				142BDBB526D557BD00245088 /* SouthAmericaModel.swift */,
 			);
 			path = SouthAmerica;
 			sourceTree = "<group>";
@@ -147,6 +149,14 @@
 				142BDBB726D557D700245088 /* OceaniaAndAntarcticaModel.swift */,
 			);
 			path = OceaniaAndAntarctica;
+			sourceTree = "<group>";
+		};
+		142BDBB926D666E300245088 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				142BDBBA26D666F000245088 /* TFLiteFlatArray+Extension.swift */,
+			);
+			path = extension;
 			sourceTree = "<group>";
 		};
 		147F23BC26D5359C0070BBD3 /* Main */ = {
@@ -195,6 +205,7 @@
 			children = (
 				14CCE3F426D3EFA800DCECA2 /* AppDelegate.swift */,
 				14CCE3F626D3EFA800DCECA2 /* SceneDelegate.swift */,
+				142BDBB926D666E300245088 /* extension */,
 				147F23BD26D535F10070BBD3 /* Model */,
 				147F23BC26D5359C0070BBD3 /* Main */,
 				14CCE3FD26D3EFAA00DCECA2 /* Assets.xcassets */,
@@ -323,12 +334,13 @@
 				142BDB9D26D5535600245088 /* AfricaModel.swift in Sources */,
 				14CCE3F926D3EFA800DCECA2 /* ViewController.swift in Sources */,
 				142BDBB426D557AF00245088 /* NorthAmerica.swift in Sources */,
-				142BDBB626D557BD00245088 /* SouthAmerica.swift in Sources */,
+				142BDBB626D557BD00245088 /* SouthAmericaModel.swift in Sources */,
 				14CCE3F526D3EFA800DCECA2 /* AppDelegate.swift in Sources */,
 				14CCE3F726D3EFA800DCECA2 /* SceneDelegate.swift in Sources */,
 				142BDB9A26D546C400245088 /* ModelInfoStorable.swift in Sources */,
 				142BDBB226D557A400245088 /* EuropeModel.swift in Sources */,
 				142BDBB826D557D700245088 /* OceaniaAndAntarcticaModel.swift in Sources */,
+				142BDBBB26D666F000245088 /* TFLiteFlatArray+Extension.swift in Sources */,
 				142BDBB026D5579700245088 /* AsiaModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

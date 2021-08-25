@@ -1,5 +1,5 @@
 //
-//  AfricaModel.swift
+//  SouthAmericaModel.swift
 //  LandmarksEncyclopedia
 //
 //  Created by Seonghun Kim on 2021/08/25.
@@ -8,10 +8,10 @@
 import Foundation
 import TFLiteSwift_Vision
 
-final class AfricaModel: ModelInfoStorable {
+final class SouthAmericaModel: ModelInfoStorable {
     private enum Resource {
-        static let modelName = "lite-model_on_device_vision_classifier_landmarks_classifier_africa_V1_1"
-        static let labelFileName = "landmarks_classifier_africa_V1_label_map"
+        static let modelName = "lite-model_on_device_vision_classifier_landmarks_classifier_south_america_V1_1"
+        static let labelFileName = "landmarks_classifier_south_america_V1_label_map"
     }
     
     private enum Constant {
@@ -51,7 +51,7 @@ final class AfricaModel: ModelInfoStorable {
     func process(input: TFLiteVisionInput) -> String {
         guard let inputData: Data = visionInterpreter.preprocess(with: input)
         else { fatalError("Cannot preprcess") }
-
+        
         guard let outputs: TFLiteFlatArray<Float32> = visionInterpreter.inference(with: inputData)?.first
         else { fatalError("Cannot inference") }
         
@@ -63,4 +63,4 @@ final class AfricaModel: ModelInfoStorable {
     }
 }
 
-// https://tfhub.dev/google/lite-model/on_device_vision/classifier/landmarks_classifier_africa_V1/1
+// https://tfhub.dev/google/lite-model/on_device_vision/classifier/landmarks_classifier_south_america_V1/1
