@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		142BDB9A26D546C400245088 /* ModelInfoStorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BDB9926D546C400245088 /* ModelInfoStorable.swift */; };
+		142BDB9A26D546C400245088 /* InputInferable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BDB9926D546C400245088 /* InputInferable.swift */; };
 		142BDB9D26D5535600245088 /* AfricaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BDB9C26D5535600245088 /* AfricaModel.swift */; };
 		142BDB9F26D553DF00245088 /* landmarks_classifier_africa_V1_label_map.csv in Resources */ = {isa = PBXBuildFile; fileRef = 142BDB9E26D553DF00245088 /* landmarks_classifier_africa_V1_label_map.csv */; };
 		142BDBA626D5576400245088 /* landmarks_classifier_asia_V1_label_map.csv in Resources */ = {isa = PBXBuildFile; fileRef = 142BDBA526D5576400245088 /* landmarks_classifier_asia_V1_label_map.csv */; };
@@ -38,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		1215E123125189AE51D16AEC /* Pods-LandmarksEncyclopedia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LandmarksEncyclopedia.debug.xcconfig"; path = "Target Support Files/Pods-LandmarksEncyclopedia/Pods-LandmarksEncyclopedia.debug.xcconfig"; sourceTree = "<group>"; };
-		142BDB9926D546C400245088 /* ModelInfoStorable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelInfoStorable.swift; sourceTree = "<group>"; };
+		142BDB9926D546C400245088 /* InputInferable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputInferable.swift; sourceTree = "<group>"; };
 		142BDB9C26D5535600245088 /* AfricaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfricaModel.swift; sourceTree = "<group>"; };
 		142BDB9E26D553DF00245088 /* landmarks_classifier_africa_V1_label_map.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = landmarks_classifier_africa_V1_label_map.csv; sourceTree = "<group>"; };
 		142BDBA526D5576400245088 /* landmarks_classifier_asia_V1_label_map.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = landmarks_classifier_asia_V1_label_map.csv; sourceTree = "<group>"; };
@@ -171,7 +171,7 @@
 		147F23BD26D535F10070BBD3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				142BDB9926D546C400245088 /* ModelInfoStorable.swift */,
+				142BDB9926D546C400245088 /* InputInferable.swift */,
 				142BDBA426D5573500245088 /* OceaniaAndAntarctica */,
 				142BDBA326D556E300245088 /* SouthAmerica */,
 				142BDBA226D556D900245088 /* NorthAmerica */,
@@ -337,7 +337,7 @@
 				142BDBB626D557BD00245088 /* SouthAmericaModel.swift in Sources */,
 				14CCE3F526D3EFA800DCECA2 /* AppDelegate.swift in Sources */,
 				14CCE3F726D3EFA800DCECA2 /* SceneDelegate.swift in Sources */,
-				142BDB9A26D546C400245088 /* ModelInfoStorable.swift in Sources */,
+				142BDB9A26D546C400245088 /* InputInferable.swift in Sources */,
 				142BDBB226D557A400245088 /* EuropeModel.swift in Sources */,
 				142BDBB826D557D700245088 /* OceaniaAndAntarcticaModel.swift in Sources */,
 				142BDBBB26D666F000245088 /* TFLiteFlatArray+Extension.swift in Sources */,

@@ -38,6 +38,15 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate {
     }()
     
     private let inferenceQueue: DispatchQueue = DispatchQueue(label: "inferenceQueue", qos: .userInteractive)
+    
+    private let models: [InputInferable] = [
+        AfricaModel(),
+        AsiaModel(),
+        EuropeModel(),
+        NorthAmericaModel(),
+        SouthAmericaModel(),
+        OceaniaAndAntarcticaModel()
+    ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -120,6 +129,8 @@ extension ViewController: UINavigationControllerDelegate {
         if let image = info[.originalImage] as? UIImage {
             inferenceQueue.async { [weak self] in
                 guard let self = self else { return }
+                
+                
             }
         }
         
