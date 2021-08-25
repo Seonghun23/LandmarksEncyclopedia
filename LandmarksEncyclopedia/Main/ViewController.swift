@@ -6,8 +6,9 @@
 //
 
 import UIKit
+import TFLiteSwift_Vision
 
-class ViewController: UIViewController, UIImagePickerControllerDelegate {
+final class ViewController: UIViewController, UIImagePickerControllerDelegate {
     
     private let imageView: UIImageView = {
        let imageView = UIImageView()
@@ -47,6 +48,10 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate {
         SouthAmericaModel(),
         OceaniaAndAntarcticaModel()
     ]
+    
+    private var preprocessOptions: PreprocessOptions {
+        return PreprocessOptions(cropArea: .squareAspectFill)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -130,7 +135,28 @@ extension ViewController: UINavigationControllerDelegate {
             inferenceQueue.async { [weak self] in
                 guard let self = self else { return }
                 
+                let input: TFLiteVisionInput = .uiImage(
+                    uiImage: image,
+                    preprocessOptions: self.preprocessOptions
+                )
                 
+                let group = DispatchGroup()
+                let queue = DispatchQueue.global(qos: .userInteractive)
+                
+                var inferences: [(String, Float32)] = []
+                
+                self.models.forEach { model in
+                    queue.async(group: group) {
+                        let inference = model.process(input: input)
+                        inferences.append(inference)
+                    }
+                }
+                
+                group.notify(queue: queue) {
+                    let result = inferences.max(by: { $0.1 < $1.1 })
+                    self.imageView.image = image
+                    self.resultLabel.text = "\(result?.0 ?? "Failure")\n\(result?.1 ?? 0)"
+                }
             }
         }
         

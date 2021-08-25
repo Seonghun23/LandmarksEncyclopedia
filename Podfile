@@ -6,6 +6,6 @@ target 'LandmarksEncyclopedia' do
   use_frameworks!
 
   # Pods for LandmarksEncyclopedia
-  pod 'TFLiteSwift-Vision', :path => '../TFLiteSwift-Vision-master'
+  pod 'TFLiteSwift-Vision'
 
 end
