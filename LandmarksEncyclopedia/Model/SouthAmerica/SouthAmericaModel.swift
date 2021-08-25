@@ -43,7 +43,7 @@ final class SouthAmericaModel: InputInferable {
             modelName: Resource.modelName,
             inputWidth: Constant.inputWidth,
             inputHeight: Constant.inputHeight,
-            normalization: .scaledNormalization
+            normalization: .none
         )
         return TFLiteVisionInterpreter(options: interpreterOptions)
     }()
