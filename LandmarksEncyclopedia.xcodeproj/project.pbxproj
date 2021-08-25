@@ -17,7 +17,7 @@
 		142BDBAE26D5578700245088 /* landmarks_classifier_oceania_antarctica_V1_label_map.csv in Resources */ = {isa = PBXBuildFile; fileRef = 142BDBAD26D5578700245088 /* landmarks_classifier_oceania_antarctica_V1_label_map.csv */; };
 		142BDBB026D5579700245088 /* AsiaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BDBAF26D5579700245088 /* AsiaModel.swift */; };
 		142BDBB226D557A400245088 /* EuropeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BDBB126D557A400245088 /* EuropeModel.swift */; };
-		142BDBB426D557AF00245088 /* NorthAmerica.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BDBB326D557AF00245088 /* NorthAmerica.swift */; };
+		142BDBB426D557AF00245088 /* NorthAmericaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BDBB326D557AF00245088 /* NorthAmericaModel.swift */; };
 		142BDBB626D557BD00245088 /* SouthAmericaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BDBB526D557BD00245088 /* SouthAmericaModel.swift */; };
 		142BDBB826D557D700245088 /* OceaniaAndAntarcticaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BDBB726D557D700245088 /* OceaniaAndAntarcticaModel.swift */; };
 		142BDBBB26D666F000245088 /* TFLiteFlatArray+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BDBBA26D666F000245088 /* TFLiteFlatArray+Extension.swift */; };
@@ -48,7 +48,7 @@
 		142BDBAD26D5578700245088 /* landmarks_classifier_oceania_antarctica_V1_label_map.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = landmarks_classifier_oceania_antarctica_V1_label_map.csv; sourceTree = "<group>"; };
 		142BDBAF26D5579700245088 /* AsiaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsiaModel.swift; sourceTree = "<group>"; };
 		142BDBB126D557A400245088 /* EuropeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EuropeModel.swift; sourceTree = "<group>"; };
-		142BDBB326D557AF00245088 /* NorthAmerica.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorthAmerica.swift; sourceTree = "<group>"; };
+		142BDBB326D557AF00245088 /* NorthAmericaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorthAmericaModel.swift; sourceTree = "<group>"; };
 		142BDBB526D557BD00245088 /* SouthAmericaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SouthAmericaModel.swift; sourceTree = "<group>"; };
 		142BDBB726D557D700245088 /* OceaniaAndAntarcticaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OceaniaAndAntarcticaModel.swift; sourceTree = "<group>"; };
 		142BDBBA26D666F000245088 /* TFLiteFlatArray+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TFLiteFlatArray+Extension.swift"; sourceTree = "<group>"; };
@@ -126,7 +126,7 @@
 			children = (
 				142BDBA926D5577800245088 /* landmarks_classifier_north_america_V1_label_map.csv */,
 				147F23C226D53D3F0070BBD3 /* lite-model_on_device_vision_classifier_landmarks_classifier_north_america_V1_1.tflite */,
-				142BDBB326D557AF00245088 /* NorthAmerica.swift */,
+				142BDBB326D557AF00245088 /* NorthAmericaModel.swift */,
 			);
 			path = NorthAmerica;
 			sourceTree = "<group>";
@@ -333,7 +333,7 @@
 			files = (
 				142BDB9D26D5535600245088 /* AfricaModel.swift in Sources */,
 				14CCE3F926D3EFA800DCECA2 /* ViewController.swift in Sources */,
-				142BDBB426D557AF00245088 /* NorthAmerica.swift in Sources */,
+				142BDBB426D557AF00245088 /* NorthAmericaModel.swift in Sources */,
 				142BDBB626D557BD00245088 /* SouthAmericaModel.swift in Sources */,
 				14CCE3F526D3EFA800DCECA2 /* AppDelegate.swift in Sources */,
 				14CCE3F726D3EFA800DCECA2 /* SceneDelegate.swift in Sources */,

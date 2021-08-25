@@ -8,7 +8,7 @@
 import Foundation
 import TFLiteSwift_Vision
 
-final class NorthAmericaModel: ModelInfoStorable {
+final class NorthAmericaModel: InputInferable {
     private enum Resource {
         static let modelName = "lite-model_on_device_vision_classifier_landmarks_classifier_north_america_V1_1"
         static let labelFileName = "landmarks_classifier_north_america_V1_label_map"
@@ -48,18 +48,20 @@ final class NorthAmericaModel: ModelInfoStorable {
         return TFLiteVisionInterpreter(options: interpreterOptions)
     }()
     
-    func process(input: TFLiteVisionInput) -> String {
-        guard let inputData: Data = visionInterpreter.preprocess(with: input)
-        else { fatalError("Cannot preprcess") }
+    func process(input: TFLiteVisionInput) -> Inference {
+        guard let inputData = visionInterpreter.preprocess(with: input) else {
+            fatalError("Failure to preprcess")
+        }
         
-        guard let outputs: TFLiteFlatArray<Float32> = visionInterpreter.inference(with: inputData)?.first
-        else { fatalError("Cannot inference") }
+        guard let outputs = visionInterpreter.inference(with: inputData)?.first else { fatalError("Failure to  inference")
+        }
         
         let predictedIndex: Int = Int(outputs.argmax())
         
         let predictedLabel = self.labels[predictedIndex]
+        let predictedThreshold = outputs.array[predictedIndex]
         
-        return predictedLabel
+        return (label: predictedLabel, threshold: predictedThreshold)
     }
 }
 
