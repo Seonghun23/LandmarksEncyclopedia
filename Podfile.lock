@@ -9,7 +9,7 @@ PODS:
   - TensorFlowLiteSwift/CoreML (2.4.0):
     - TensorFlowLiteC/CoreML (= 2.4.0)
     - TensorFlowLiteSwift/Core (= 2.4.0)
-  - TFLiteSwift-Vision (0.1.1):
+  - TFLiteSwift-Vision (0.2.0):
     - TensorFlowLiteSwift/CoreML (~> 2.4.0)
 
 DEPENDENCIES:
@@ -24,8 +24,8 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   TensorFlowLiteC: 09f8ac75a76caeadb19bcfa694e97454cc1ecf87
   TensorFlowLiteSwift: f062dc1178120100d825d7799fd9f115b4a37fee
-  TFLiteSwift-Vision: e6a9b24d4cbede963638f442c58e1c7a7ca7bfd2
+  TFLiteSwift-Vision: 47c99ec45f9f564c446dbe4fb037a97de047769c
 
-PODFILE CHECKSUM: e404ff8885b5ee7f8fc1193fe93cfd8026dfadae
+PODFILE CHECKSUM: 2dadc3b54f901ccdc3dd5552b4c4526bc0a1bd52
 
 COCOAPODS: 1.9.3

@@ -14,11 +14,6 @@ final class AsiaModel: InputInferable {
         static let labelFileName = "landmarks_classifier_asia_V1_label_map"
     }
     
-    private enum Constant {
-        static let inputWidth: Int = 321
-        static let inputHeight: Int = 321
-    }
-    
     private lazy var labels: [String] = {
         guard let labelFilePath = Bundle.main.path(forResource: Resource.labelFileName, ofType: "csv") else {
             assertionFailure("Failure get labels::\(Resource.labelFileName)")
@@ -41,9 +36,7 @@ final class AsiaModel: InputInferable {
     private lazy var visionInterpreter: TFLiteVisionInterpreter = {
         let interpreterOptions = TFLiteVisionInterpreter.Options(
             modelName: Resource.modelName,
-            inputWidth: Constant.inputWidth,
-            inputHeight: Constant.inputHeight,
-            normalization: .none
+            normalization: .meanStd(mean: [127.5], std: [127.5])
         )
         return TFLiteVisionInterpreter(options: interpreterOptions)
     }()

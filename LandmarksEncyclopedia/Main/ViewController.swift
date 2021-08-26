@@ -48,10 +48,6 @@ final class ViewController: UIViewController, UIImagePickerControllerDelegate {
         SouthAmericaModel(),
         OceaniaAndAntarcticaModel()
     ]
-    
-    private var preprocessOptions: PreprocessOptions {
-        return PreprocessOptions(cropArea: .squareAspectFill)
-    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -135,10 +131,7 @@ extension ViewController: UINavigationControllerDelegate {
             inferenceQueue.async { [weak self] in
                 guard let self = self else { return }
                 
-                let input: TFLiteVisionInput = .uiImage(
-                    uiImage: image,
-                    preprocessOptions: self.preprocessOptions
-                )
+                let input: TFLiteVisionInput = .uiImage(uiImage: image)
                 
                 let group = DispatchGroup()
                 let queue = DispatchQueue.global(qos: .userInteractive)
