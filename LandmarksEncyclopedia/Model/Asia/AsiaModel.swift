@@ -21,10 +21,9 @@ final class AsiaModel: InputInferable {
         }
         var labels: [String] = []
         do {
-            labels = try String(contentsOfFile: labelFilePath)
-                .split(separator: "\n")
-                .compactMap { $0.split(separator: ",").last }
-                .map(String.init)
+            labels = try String(contentsOfFile: labelFilePath, encoding: .utf8)
+                .components(separatedBy: "\n")
+                .compactMap { $0.components(separatedBy: ",").last }
             labels.removeFirst()
         } catch let error {
             assertionFailure(error.localizedDescription)

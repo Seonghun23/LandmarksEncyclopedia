@@ -23,6 +23,7 @@ final class ViewController: UIViewController, UIImagePickerControllerDelegate {
         label.text = "Waiting import"
         label.font = .systemFont(ofSize: 20, weight: .bold)
         label.textAlignment = .center
+        label.numberOfLines = 0
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -147,8 +148,10 @@ extension ViewController: UINavigationControllerDelegate {
                 
                 group.notify(queue: queue) {
                     let result = inferences.max(by: { $0.1 < $1.1 })
-                    self.imageView.image = image
-                    self.resultLabel.text = "\(result?.0 ?? "Failure")\n\(result?.1 ?? 0)"
+                    DispatchQueue.main.async {
+                        self.imageView.image = image
+                        self.resultLabel.text = "\(result?.0 ?? "Failure")\n\(result?.1 ?? 0)"
+                    }
                 }
             }
         }
